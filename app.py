@@ -1,4 +1,3 @@
-import os
 import json
 from news import search_news
 from arima import predict_views
