@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 def search_news(page_name, prediction_date):
     # Clean up the topic name
-    cleaned_topic = re.sub(r'^\d+_|_en$', '', page_name)
+    cleaned_topic = re.sub(r'^\d+_|_(en|de|ru|jp|es|it)$', '', page_name)
     cleaned_topic = cleaned_topic.replace('_', ' ')
 
     # Convert the prediction_date to a datetime object
